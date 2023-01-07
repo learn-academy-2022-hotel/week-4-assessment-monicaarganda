@@ -30,17 +30,17 @@ num3 = 221
 
         def even_or_odd num
             if num.even?
-                p "#{num} is even"
+                "#{num} is even"
             else
-                p "#{num} is odd"
+                "#{num} is odd"
             end
         end
 
-        even_or_odd(num1)
+        p even_or_odd(num1)
             # output: "7 is odd"
-        even_or_odd(num2)
+        p even_or_odd(num2)
             # output: "42 is even"
-        even_or_odd(num3)
+        p even_or_odd(num3)
             # output: "221 is odd"
 
 # -------------------2) Create a method that takes in a string and removes all the vowels from the string. Use the test variables provided. 
@@ -61,14 +61,14 @@ beatles_album3 = 'Abbey Road'
     # then call on the variable in the methods parameters
 
         def remove_vowels string
-            p string.delete "aeiouAEIOU"
+            string.delete "aeiouAEIOU"
         end
 
-        remove_vowels(beatles_album1)
+        p remove_vowels(beatles_album1)
             # output: "Rbbr Sl"
-        remove_vowels(beatles_album2)
+        p remove_vowels(beatles_album2)
             # output: "Sgt Pppr"
-        remove_vowels(beatles_album3)
+        p remove_vowels(beatles_album3)
             # output: "bby Rd"
 
 # -------------------3) Create a method that takes in a string and checks if the string is a palindrome. A palindrome is the same word spelled forward or backward. Use the test variables provided.
@@ -92,17 +92,17 @@ palindrome_tester3 = 'Rotator'
 
         def palindrome string
             if string.downcase == string.reverse.downcase
-                p "#{string} is a palindrome"
+                "#{string} is a palindrome"
             else 
-                p "#{string} is not a palindrome"
+                "#{string} is not a palindrome"
             end
         end
 
 
-        palindrome(palindrome_tester1)
+        p palindrome(palindrome_tester1)
             # output: "Racecar is a palindrome"
-        palindrome(palindrome_tester2)
+        p palindrome(palindrome_tester2)
             # output: "LEARN is not a palindrome"
-        palindrome(palindrome_tester3)
+        p palindrome(palindrome_tester3)
             # output: "Rotator is a palindrome"
 
